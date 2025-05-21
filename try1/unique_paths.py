@@ -1,3 +1,9 @@
+"""Space Complexity:
+
+O(m × n) for the memo table (2D list).
+O(m + n) for recursion stack in the worst case 
+(since at most m + n calls will be active at once in the recursion tree)."""
+
 def unique_paths(m: int, n: int) -> int:
     """Prompt:
 

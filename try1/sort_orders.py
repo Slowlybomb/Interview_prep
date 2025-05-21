@@ -1,3 +1,10 @@
+"""Time Complexity:
+
+O(n log n) due to the sorted() function, where n is the number of orders.
+The datetime.fromisoformat() function runs in O(1) time for each item
+(constant parsing time per timestamp)."""
+
+
 from datetime import datetime
 
 def sort_orders(orders: list[tuple[str, str]]) -> list[str]:

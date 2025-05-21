@@ -1,3 +1,11 @@
+"""Time Complexity:
+
+O(n) where n is the length of the array.
+
+You traverse the array only once (for i in range(len(arr))) 
+and perform O(1) operations inside the loop 
+(dictionary lookups and updates are constant time on average)."""
+
 def longest_zero_sum_subarray(arr: list[int]) -> int:
     s_dict = {}
     max_length = 0
