@@ -29,23 +29,6 @@ def unique_paths(m: int, n: int) -> int:
 
     return number_of_paths(m, n)
 
-# Python implementation to count of possible paths to reach
-# using Using Top-Down DP (Memoization)
-
-def countPaths(m, n, memo):
-    if n == 1 or m == 1:
-        memo[m][n] = 1
-        return 1
-
-    # Add the element in the memo table
-    # If it was not computed before
-    if  memo[m][n] == 0:
-         memo[m][n] = countPaths(m-1,n, memo) + \
-            countPaths(m,n-1, memo)
-
-    return  memo[m][n]
-
-
 if __name__ == "__main__":
     n, m = 3, 3
 
