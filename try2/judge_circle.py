@@ -8,7 +8,6 @@ def judge_circle(moves: str) -> bool:
     Output: True"""
     x = 0
     y = 0
-
     for char in moves:
         match char:
             case 'U':
