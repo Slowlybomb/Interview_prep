@@ -1,0 +1,88 @@
+Amazon Internship & Entry-Level Interview – Common Problem Types
+
+1. Arrays & Hashing
+-------------------
+- Two Sum
+- Subarray Sum Equals K
+- Longest Substring Without Repeating Characters
+- Contains Duplicate
+- First Non-Repeating Element
+- Majority Element
+- Group Anagrams
+Skills: Prefix sums, sliding window, HashMap usage
+
+2. Strings
+----------
+- Valid Anagram
+- Palindrome Check
+- Longest Palindromic Substring
+- String Compression
+- Roman to Integer / Integer to Roman
+- Decode Ways
+Skills: Pointers, frequency maps, string building, dynamic programming
+
+3. Two Pointers
+---------------
+- Reverse a String / Array In-Place
+- Container With Most Water
+- Remove Duplicates from Sorted Array
+- Move Zeroes
+- Three Sum
+Skills: Time-efficient iteration and partitioning
+
+4. Linked Lists
+---------------
+- Reverse Linked List
+- Detect Cycle in Linked List
+- Merge Two Sorted Lists
+- Remove N-th Node From End
+- Palindrome Linked List
+Skills: Pointer manipulation, dummy nodes, recursion
+
+5. Trees & Recursion
+--------------------
+- Binary Tree Inorder/Preorder/Postorder Traversal
+- Lowest Common Ancestor
+- Validate Binary Search Tree
+- Maximum Depth of Binary Tree
+- Path Sum
+- Diameter of Binary Tree
+Skills: DFS, recursion, stack frames
+
+6. Dynamic Programming (DP)
+---------------------------
+- Fibonacci
+- Climbing Stairs
+- House Robber
+- Longest Increasing Subsequence
+- Coin Change
+- Edit Distance
+Skills: Overlapping subproblems, memoisation, tabulation
+
+7. Stacks & Queues
+------------------
+- Valid Parentheses
+- Min Stack
+- Implement Queue Using Stacks
+- Daily Temperatures
+Skills: Stack operations, Monotonic stack, simulation
+
+8. Graphs (Basic)
+-----------------
+- Number of Islands (DFS/BFS)
+- Clone Graph
+- Course Schedule (Topological Sort)
+- Shortest Path (Dijkstra / BFS)
+Skills: DFS, BFS, Topological Sort, adjacency lists
+
+Summary Table:
+--------------
+| Topic            | Key Techniques                | Example Problem                          |
+|------------------|-------------------------------|------------------------------------------|
+| Arrays           | HashMap, sliding window       | Two Sum, Max Subarray                    |
+| Strings          | Frequency map, two pointers   | Valid Anagram, Palindrome Check          |
+| Linked Lists     | Pointer logic                 | Reverse List, Detect Cycle               |
+| Trees            | Recursion, DFS                | Inorder Traversal, LCA                   |
+| DP               | Memoisation, tabulation       | Climb Stairs, Coin Change                |
+| Stacks/Queues    | Monotonic Stack, simulation   | Valid Parentheses, Min Stack             |
+| Graphs (Basic)   | DFS, BFS, Topo Sort           | Number of Islands, Clone Graph           |
