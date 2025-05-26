@@ -19,7 +19,7 @@ def majorityElement_hashmap(nums: list[int]) -> int:
     n_dict = {}
     for num in nums:
         n_dict[num] = n_dict.get(num, 0) + 1
-        if n_dict[num] >= len(nums) / 2:
+        if n_dict[num] > len(nums) // 2:
             return num
 
 def majorityElement_moores(nums: list[int]) -> int:
