@@ -1,0 +1,102 @@
+
+Amazon Internship Screening – Section 2 Fundamentals Cheat‑Sheet
+================================================================
+
+This document lists the core facts and techniques you should be able to recall
+*quickly and accurately* for the short‑answer CS‑fundamentals section.
+
+----------------------------------------------------------------
+1. Data Structures & Complexity
+----------------------------------------------------------------
+• Big‑O for common operations (average / worst):
+    - Dynamic array:  index O(1), insert‑end amortised O(1), insert‑mid O(n)
+    - Singly linked list: insert‑head O(1), search O(n)
+    - Stack / Queue (array or list backed): push / pop / enqueue / dequeue O(1)
+    - Hash table (separate chaining): lookup avg O(1), worst O(n) when all collide
+    - Balanced BST (AVL / Red‑Black): search / insert / delete O(log n)
+    - Binary heap:             build O(n), insert O(log n), remove‑min O(log n)
+• Collision‑resolution basics: separate chaining vs open addressing.
+• Stable vs unstable sorts: merge sort & insertion sort are stable; quick sort isn’t.
+• Choosing a structure: hash for fast look‑ups, heap for repeated min/max, etc.
+
+----------------------------------------------------------------
+2. Operating Systems
+----------------------------------------------------------------
+• Process vs Thread: address space isolation; threads share memory & descriptors.
+• Process life‑cycle states: new → ready → running → waiting → terminated.
+• `fork()` on Unix: creates child with copy‑on‑write pages; returns 0 to child, PID to parent.
+• Context switch: save regs + PCB, load next PCB; cost ≈ microseconds.
+• User mode vs kernel mode; system‑call trap to transition.
+• Virtual memory: pages, page table, TLB, page fault, swapping.
+• Synchronisation: mutex (binary), semaphore (counting), spin‑lock; when to use each.
+• CPU scheduling basics: round‑robin, priority, pre‑emptive vs co‑operative.
+
+----------------------------------------------------------------
+3. Databases (SQL)
+----------------------------------------------------------------
+• Relational basics: tables, keys, foreign keys.
+• Normal forms – 1 NF, 2 NF, 3 NF (eliminate repeating groups, partial and transitive dependencies).
+• ACID properties: Atomicity, Consistency, Isolation, Durability.
+• Joins: 
+    INNER – matching rows only
+    LEFT / RIGHT OUTER – keep all rows from one side
+    FULL OUTER – union of both
+• Indexes: B‑tree (range queries), hash (exact match); can slow writes & large scans.
+• Isolation levels: Read Uncommitted, Committed, Repeatable Read, Serializable.
+• Basic aggregation / GROUP BY; HAVING vs WHERE.
+• Prepared statements protect against SQL injection.
+
+----------------------------------------------------------------
+4. Networking
+----------------------------------------------------------------
+• TCP/IP stack (bottom‑up): Link → Internet (IP) → Transport (TCP/UDP) → Application.
+• TCP: reliable, ordered, flow & congestion control; three‑way handshake (SYN, SYN‑ACK, ACK).
+• UDP: connectionless, best‑effort, lower latency (DNS, VoIP).
+• DNS resolution steps: local cache → resolver → root → TLD → authoritative.
+• MTU & fragmentation; why Path‑MTU discovery matters.
+• Common ports: HTTP 80 / 443, SSH 22, DNS 53, SMTP 25.
+• Latency vs throughput; why TCP slow‑start exists.
+• Basic HTTP: stateless, verbs (GET, POST, PUT, DELETE), headers, cookies.
+
+----------------------------------------------------------------
+5. Object‑Oriented Programming
+----------------------------------------------------------------
+• Four pillars:
+    Encapsulation – hide data behind methods
+    Inheritance   – “is‑a” hierarchy, re‑use behaviour
+    Polymorphism  – many forms; override virtual method, dynamic dispatch
+    Abstraction    – expose essential features only
+• Interface vs abstract class: multiple inheritance of type vs single partial impl.
+• Composition over inheritance: favour “has‑a” to avoid tight coupling.
+• SOLID principles:
+    S – Single‑Responsibility
+    O – Open/Closed
+    L – Liskov Substitution
+    I – Interface‑Segregation
+    D – Dependency‑Inversion
+• Dynamic dispatch / v‑tables; why runtime polymorphism costs an indirection.
+
+----------------------------------------------------------------
+6. Depth & Style Expectations
+----------------------------------------------------------------
+• Breadth first: concise definitions trump deep derivations.
+• Relate answers to customer impact or system reliability (Amazon culture).
+• 3–4 sentences or bullet points per question; keep handwriting legible if on paper.
+
+----------------------------------------------------------------
+7. Quick‑Revision Checklist
+----------------------------------------------------------------
+□ Recite Big‑O table without notes.  
+□ Sketch process state diagram in <30 s.  
+□ Write INNER vs LEFT JOIN from memory.  
+□ Label TCP/IP layers & example protocols.  
+□ Name the four OO pillars + SOLID expansions.
+
+----------------------------------------------------------------
+8. Free Revision Resources
+----------------------------------------------------------------
+• bigocheatsheet.com – Big‑O poster  
+• “Operating Systems: Three Easy Pieces” – Ch. 1, 2, 6, 7  
+• SQLBolt lessons 10–13  
+• Beej’s Guide to Network Programming – §§ 1‑4  
+• Head First OOAD – chapters on composition

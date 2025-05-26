@@ -76,7 +76,7 @@ Skills: Stack operations, Monotonic stack, simulation
 Skills: DFS, BFS, Topological Sort, adjacency lists
 
 Summary Table:
---------------
++------------------+-------------------------------+------------------------------------------+
 | Topic            | Key Techniques                | Example Problem                          |
 |------------------|-------------------------------|------------------------------------------|
 | Arrays           | HashMap, sliding window       | Two Sum, Max Subarray                    |
@@ -86,3 +86,4 @@ Summary Table:
 | DP               | Memoisation, tabulation       | Climb Stairs, Coin Change                |
 | Stacks/Queues    | Monotonic Stack, simulation   | Valid Parentheses, Min Stack             |
 | Graphs (Basic)   | DFS, BFS, Topo Sort           | Number of Islands, Clone Graph           |
++------------------+-------------------------------+------------------------------------------+
